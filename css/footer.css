@@ -1,0 +1,220 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #000;
+}
+
+.footer {
+    background-color: #000000;
+    padding: 30px;
+    position: relative;
+    max-width: 1800px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease-out, transform 0.8s ease-out;
+}
+
+.language-selector {
+    position: absolute;
+    top: 20px;
+    right: 50px;
+}
+
+.language-selector button {
+    background: none;
+    border: 1px solid #e6bb2d;
+    color: #fff;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 5px;
+}
+
+.language-selector button:hover {
+    color: #e6bb2d;
+
+}
+
+.language-dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #000000;
+    padding: 10px;
+    min-width: 150px;
+    z-index: 1000;
+}
+
+.language-dropdown a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 0;
+    font-size: 14px;
+    display: block;
+}
+
+.language-dropdown a:hover {
+    color: #e6bb2d;
+}
+
+.language-selector:hover .language-dropdown {
+    display: block;
+}
+
+.main-links {
+    margin-bottom: 20px;
+    padding-left: 20px;
+}
+
+.main-links a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 20px;
+    font-size: 20px;
+}
+
+.main-links a:hover {
+    color: #e6bb2d;
+}
+
+.legal-links {
+    margin-bottom: 40px;
+    padding-left: 20px;
+}
+
+.legal-links a, .legal-links button {
+    color: #ffffff;
+    text-decoration: none;
+    margin-right: 20px;
+    font-size: 15px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.legal-links a:hover, .legal-links button:hover {
+    color: #e6bb2d;
+}
+
+.company-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 15px;
+    color: #ffffff;
+    padding: 0 20px;
+    font-weight: bold;
+}
+
+.company-info .company-name {
+    flex: 1;
+    text-align: left;
+}
+
+.company-info .locations {
+    flex: 1;
+    text-align: center;
+}
+
+.company-info .locations span {
+    margin: 0 10px;
+}
+
+.company-info .year-info {
+    flex: 1;
+    text-align: right;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 768px) {
+    .footer {
+        padding: 10px;
+    }
+
+    .language-selector {
+        position: static;
+        text-align: right;
+        margin-bottom: 10px;
+    }
+
+    .language-selector button {
+        display: none;
+    }
+
+    .language-dropdown {
+        position: static;
+        width: 100%;
+        min-width: auto;
+        background-color: #000000;
+        display: none;
+    }
+
+    .main-links {
+        padding-left: 10px;
+        text-align: left;
+    }
+
+    .main-links a {
+        display: inline-block;
+        margin: 10px 10px 10px 0;
+        font-size: 18px;
+    }
+
+    .legal-links {
+        padding-left: 10px;
+        text-align: left;
+    }
+
+    .legal-links a, .legal-links button {
+        display: inline-block;
+        margin: 10px 10px 10px 0;
+        font-size: 14px;
+    }
+
+    .company-info {
+        flex-direction: column;
+        text-align: center;
+        padding-left: 10px;
+    }
+
+    .company-info .company-name,
+    .company-info .locations,
+    .company-info .year-info {
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    .company-info .locations span {
+        margin: 0 5px;
+    }
+
+    .footer-top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .main-links {
+        flex: 1;
+        text-align: left;
+    }
+
+    .language-selector {
+        flex: 0 0 auto;
+        text-align: right;
+    }
+}
