@@ -101,7 +101,7 @@ body {
     width: 225px;
     height: 280px;
     border-radius: 0px;
-    transition: transform 1.3s ease;
+    transition: transform 1s ease;
     object-fit: cover;
     pointer-events: none;
     -webkit-user-drag: none;
@@ -110,7 +110,7 @@ body {
 }
 
 .project:hover img {
-    transform: scale(1.02); 
+    transform: scale(1.01); 
 }
 
 .project h3 {
@@ -120,16 +120,18 @@ body {
 
 .explore-games-button {
     background-color: transparent;
-    color: #f0f3f4;
-    border: 1px solid #e6bb2d;
+    color: #ffffff;
+    border: 2px solid #e6bb2d;
     padding: 12px 24px;
     font-size: 16px;
     border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s ease, color 0.3s ease;
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
     text-decoration: none;
-    margin-top: 40px;
+    margin-top: 20px;
     display: inline-block;
+    opacity: 1;
+    width: fit-content;
 }
 
 .explore-games-button:hover {

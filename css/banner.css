@@ -67,7 +67,7 @@
 
 .carousel__info-button {
     background-color: transparent;
-    color: #e6bb2d;
+    color: #ffffff;
     border: 2px solid #e6bb2d;
     padding: 12px 24px;
     font-size: 16px;
@@ -82,8 +82,8 @@
 }
 
 .carousel__info-button:hover {
-    background-color: #ffba43;
-    color: #000000;
+    background-color: #ffba4300;
+    color: #ffba43;
     border-color: #ffba43;
 }
 

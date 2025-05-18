@@ -42,7 +42,7 @@ body {
     overflow: hidden;
     display: flex;
     flex-direction: column;
-    padding-bottom: 100px;
+    padding-bottom: 0;
 }
 
 .project-image {
@@ -94,7 +94,6 @@ body {
 .project-button {
     background-color: #e6bb2d;
     color: white;
-    
     border: none;
     padding: 10px 20px;
     border-radius: 5px;
@@ -106,6 +105,6 @@ body {
 .project-button:hover {
     background-color: transparent;
     color: #e6bb2d;
-    border: 0.5px solid #e6bb2d;
+    border: 0.1px solid #e6bb2d;
     border-color: #ffba43;
 }

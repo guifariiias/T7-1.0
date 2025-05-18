@@ -14,7 +14,7 @@ header {
 }
 
 header.hide {
-    transform: translateY(-100%);
+    transform: translateY(-80%);
     opacity: 0;
 }
 
@@ -45,7 +45,7 @@ main {
 }
 
 .logo img {
-    max-width: 55px;
+    max-width: 60px;
     transition: transform 1s ease, filter 3s ease;
     cursor: pointer;
     -webkit-user-drag: none;
