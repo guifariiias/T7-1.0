@@ -17,7 +17,7 @@ body {
 }
 
 .banner-gallery img {
-    max-width: 100%;
+    max-width: 86%;
     border-radius: 10px;
     width: 1700px;
     height: auto;
@@ -42,6 +42,7 @@ body {
     overflow: hidden;
     display: flex;
     flex-direction: column;
+    padding-bottom: 100px;
 }
 
 .project-image {
