@@ -16,6 +16,20 @@ body {
     transition: opacity 0.5s ease-out, transform 0.8s ease-out;
 }
 
+.footer-transition {
+    height: 100px;
+    width: 100%;
+    background: linear-gradient(to bottom, 
+                #0b0b0b, 
+                #080808 20%, 
+                #050505 50%, 
+                #020202 90%, 
+                #000 100%);
+    margin-bottom: -1px;
+}
+
+
+
 .language-selector {
     position: absolute;
     top: 20px;
@@ -127,6 +141,8 @@ body {
     flex: 1;
     text-align: right;
 }
+
+
 
 @keyframes fadeInUp {
     from {
