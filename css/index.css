@@ -15,7 +15,7 @@ body {
 }
 
 .text-content {
-    max-width: 500px;
+    max-width: 400px;
     margin-left: 0px;
 }
 
@@ -98,8 +98,8 @@ body {
 }
 
 .project img {
-    width: 225px;
-    height: 280px;
+    width: 265px;
+    height: 350px;
     border-radius: 0px;
     transition: transform 1s ease;
     object-fit: cover;
@@ -149,6 +149,22 @@ body {
     margin-right: 3px;
     color: #f0f3f4;
 } 
+
+@media (max-width: 1790px) { 
+    .project-list {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+
+    }
+
+    .project img {
+    width: 100%;
+    max-width: 250px;
+    height: 288px;
+    }
+}
 
 @media (max-width: 768px) { 
     header {

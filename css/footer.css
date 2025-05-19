@@ -139,6 +139,22 @@ body {
     }
 }
 
+@media (max-width: 1790px) { 
+    .footer {
+    padding-left: 90px;
+    }
+
+    .language-selector {
+    padding-right: 65px;
+    }
+
+    .company-info {
+     padding-right: 85px;
+
+    }
+
+}
+
 @media (max-width: 768px) {
     .footer {
         padding: 10px;

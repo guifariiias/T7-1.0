@@ -108,3 +108,9 @@ body {
     border: 0.1px solid #e6bb2d;
     border-color: #ffba43;
 }
+
+@media (max-width: 2090px) { /*temporário até resolver o bug*/
+    .project-button {
+        display: none;
+
+    }
