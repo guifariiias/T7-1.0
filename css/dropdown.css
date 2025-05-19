@@ -27,7 +27,7 @@ nav ul li a {
     top: 65px;
     left: 0;
     width: 100%;
-    height: calc(72vh - 30px);
+    height: calc(70vh - 30px);
     background-color: rgba(0, 0, 0, 0.973);
     z-index: 999;
     overflow-x: auto;
@@ -37,6 +37,7 @@ nav ul li a {
     visibility: hidden;
     transform: translateY(-5px);
     transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 10px 25px rgb(10, 10, 10);
 }
 
 .dropdown-content.active {
