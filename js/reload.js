@@ -1,7 +1,10 @@
-window.onbeforeunload = function() {
-    window.scrollTo(0, 0);
-};
-
-window.addEventListener('beforeunload', function() {
-    window.scrollTo(0, 0);
+window.addEventListener('load', function() {
+    if (performance.navigation.type === 1) {
+        setTimeout(() => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth' 
+            });
+        }, 100);
+    }
 });

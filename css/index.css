@@ -166,6 +166,21 @@ body {
     }
 }
 
+@media (max-width: 1400px) { /*Ajuste em breve para notebooks*/
+    .project-list {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    }
+    
+    .project img { 
+    width: 100%;
+    max-width: 250px;
+    height: 288px;
+    }
+}
+
 @media (max-width: 768px) { 
     header {
         flex-direction: column;
