@@ -28,8 +28,6 @@ body {
     margin-bottom: -1px;
 }
 
-
-
 .language-selector {
     position: absolute;
     top: 20px;
@@ -219,7 +217,7 @@ body {
     .company-info {
         flex-direction: column;
         text-align: center;
-        padding-left: 10px;
+        padding-left: 100px;
     }
 
     .company-info .company-name,
