@@ -1,5 +1,6 @@
 window.addEventListener('load', function() {
-    if (performance.navigation.type === 1) {
+    const navigationEntries = performance.getEntriesByType("navigation");
+    if (navigationEntries.length > 0 && navigationEntries[0].type === "reload") {
         setTimeout(() => {
             window.scrollTo({
                 top: 0,

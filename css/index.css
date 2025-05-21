@@ -1,8 +1,6 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
-    background-color: #0b0b0b;
 }
 
 .main-content {
@@ -12,6 +10,7 @@ body {
     padding: 40px;
     color: #ffffff;
     background-color: #0b0b0b;
+    
 }
 
 .text-content {
@@ -19,8 +18,14 @@ body {
     margin-left: 0px;
 }
 
+.main-content h1 {
+    white-space: pre-line;
+    font-family: 'Helvetica Now Text', 'Helvetica Neue', sans-serif;
+}
+
 .main-content p {
     white-space: pre-line;
+    font-family: 'Helvetica Now Text', 'Arial', sans-serif;
 }
 
 .fade-in2 {
@@ -32,10 +37,6 @@ body {
 .fade-in2.visible {
     opacity: 1;
     transform: translateY(0);
-}
-
-.main-content p {
-    white-space: pre-line;
 }
 
 .gallery {
@@ -82,8 +83,14 @@ body {
 }
 
 .explore-projects h2 {
+    font-family: 'Helvetica Now Text', 'Helvetica Neue', sans-serif;
     font-size: 30px;
     margin-bottom: 30px;
+}
+
+.explore-projects h3 {
+    font-family: 'Helvetica Now Text', 'Helvetica Neue', sans-serif;
+    font-size: 15px;
 }
 
 .project-list {
@@ -115,7 +122,6 @@ body {
 
 .project h3 {
     margin-top: 15px;
-    font-size: 15px;
 }
 
 .explore-games-button {
@@ -132,6 +138,7 @@ body {
     display: inline-block;
     opacity: 1;
     width: fit-content;
+    font-family: 'Helvetica Now Text', 'Arial', sans-serif;
 }
 
 .explore-games-button:hover {
@@ -211,20 +218,7 @@ body {
     }
 }
 
-@media (max-width: 1469px) { /*LEMBRAR DE ALTERAR*/
-    .project-list {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    }
 
-    .project img { 
-    width: 100%;
-    max-width: 180px;
-    height: 288px;
-    }
-}
 
 @media (max-width: 768px) { 
     header {
@@ -307,7 +301,6 @@ body {
         padding: 10px 20px;
     }
 }
-
 @keyframes fadeIn {
     from {
         opacity: 0;
