@@ -1,28 +1,3 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f0f3f4;
-}
-
-.banner-gallery {
-    padding-top: 150px;
-    padding-bottom: 80px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    background-color: #f0f3f4;
-}
-
-.banner-gallery img {
-    max-width: 86%;
-    border-radius: 10px;
-    width: 1700px;
-    height: auto;
-    object-fit: cover;
-}
-
 .projects-container2 {
     display: flex;
     flex-wrap: wrap;
@@ -30,7 +5,7 @@ body {
     padding: 20px;
     background-color: #f0f3f4;
     gap: 20px;
-    margin-bottom: 50px;
+    margin-bottom: 0px;
 }
 
 .project-card {
@@ -43,6 +18,8 @@ body {
     flex-direction: column;
     padding-bottom: 0;
     transition: transform 0.3s ease;
+    will-change: transform;
+     contain: content;
 }
 
 .project-card:hover {
@@ -53,34 +30,33 @@ body {
     position: relative;
     width: 100%;
     height: 400px;
+    overflow: hidden;
 }
 
-.project-image {
+.static-image {
     width: 100%;
     height: 100%;
     object-fit: cover;
     transition: opacity 0.3s ease;
 }
 
-.static-image {
+.video-container {
     position: absolute;
     top: 0;
     left: 0;
-}
-
-.hover-video {
-    position: absolute;
-    top: 0;
-    left: 0;
+    width: 100%;
+    height: 100%;
     opacity: 0;
+    transition: opacity 0.3s ease;
+    background-color: #000;
 }
 
 .project-card:hover .static-image {
     opacity: 0;
 }
 
-.project-card:hover .hover-video {
-    opacity: 1;
+.project-card:hover .video-container {
+opacity: 1;
 }
 
 .project-info {
